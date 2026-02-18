@@ -1,0 +1,23 @@
+<section class="flex flex-col items-center justify-center">
+  <div>
+    <h1 class="font-bold py-4">Seleccione una region para mostrar los países</h1>
+  </div>
+  <div class="flex gap-x-5">
+    @for (region of regions; track region) {
+      <button
+        class="btn btn-outline btn-primary w-[100px]"
+        (click)="selectRegion(region)"
+        [class.btn-secondary]="selectedRegion() === region"
+      >
+        {{ region }}
+      </button>
+    }
+  </div>
+</section>
+
+<app-country-list
+  [countries]="regionResource.value() ?? []"
+  [errorMessage]="regionResource.error()"
+  [isEmpty]="regionResource.value()?.length === 0"
+  [isLoading]="regionResource.isLoading()"
+/>

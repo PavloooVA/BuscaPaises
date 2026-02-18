@@ -1,59 +1,35 @@
-# 03CountryApp
+# BuscaPaíses
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
+Aplicación web que permite buscar y explorar países del mundo. Utiliza la API *REST Countries* para obtener información relevante sobre cada país. Cuenta con un sistema de búsqueda intuitivo y optimización de carga.
+Esta aplicación fue desarrollada siguiendo el curso de *Angular: De cero a experto por DevTalles*.
 
-## Development server
+## ✅ Funcionalidades
+- **Búsqueda**: Busca países por nombre, capital o región.
+- **Rutas dinámicas**: Obtiene información relevante de cada país mediante rutas dinámicas.
+- **Caché temporal**: Almacena búsquedas previas para optimizar la carga de resultados.
 
-To start a local development server, run:
+## 🧰 Tecnologías
+- Angular 20
+- Tailwind CSS
+- DaisyUI
+- RxJS
+- REST Countries API
 
-```bash
-ng serve
-```
+## 📄 Licencia
+MIT
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📷 Capturas del proyecto
+- **Bienvenida a la aplicación**
+<img width="1346" height="599" alt="Image" src="https://github.com/user-attachments/assets/f88996e4-5d42-4fa1-b31a-2a22d46c7402" />
 
-## Code scaffolding
+- **Búsqueda por capital**
+<img width="1345" height="597" alt="Image" src="https://github.com/user-attachments/assets/78158061-8978-4b7a-987b-580c336cfe13" />
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Búsqueda por país**
+<img width="1363" height="599" alt="Image" src="https://github.com/user-attachments/assets/929c630d-2448-457b-a3f7-f79afe67093a" />
 
-```bash
-ng generate component component-name
-```
+- **Información relevante de país**
+<img width="1358" height="599" alt="Image" src="https://github.com/user-attachments/assets/8a4096a8-05b1-4b35-ac26-d18fa70ab88c" />
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Países por region**
+<img width="1364" height="599" alt="Image" src="https://github.com/user-attachments/assets/638d6ac6-b4d0-408d-987c-37d4d18151d1" />

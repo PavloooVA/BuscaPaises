@@ -1,0 +1,36 @@
+<section class="flex w-full items-center justify-evenly mb-8">
+  <div class="flex flex-col items-center justify-center gap-y-5">
+    <h1 class="text-4xl font-medium transition delay-150 duration-300 hover:-translate-y-3">{{ country().name }}</h1>
+
+    <div class="stats shadow mt-">
+      <div class="stat place-items-center">
+        <div class="stat-title">Código de país</div>
+        <div class="stat-value"> {{country().cca2}} </div>
+      </div>
+
+      <div class="stat place-items-center">
+        <div class="stat-title">Población</div>
+        <div class="stat-value text-secondary"> {{country().population | number}} </div>
+      </div>
+
+      <div class="stat place-items-center">
+        <div class="stat-title">Capital</div>
+        <div class="stat-value"> {{ country().capital}} </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hover-3d">
+    <figure class="max-w-100 rounded-2xl">
+      <img [src]="[country().flagSvg]" class="w-80" alt="3D card" />
+    </figure>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</section>
